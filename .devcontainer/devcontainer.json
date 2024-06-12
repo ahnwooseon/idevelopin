@@ -4,13 +4,25 @@
     "name": "C# (.NET) and PostgreSQL",
     "dockerComposeFile": "docker-compose.yml",
     "service": "app",
-    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
 	// Configure tool-specific properties.
-	// "customizations": {},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-dotnettools.csdevkit",
+				"ms-dotnettools.csharp",
+				"ms-dotnettools.vscodeintellicode-csharp",
+				"tintoy.msbuild-project-tools",
+				"ms-dotnettools.dotnet-interactive-vscode",
+				"icsharpcode.ilspy-vscode",
+				"humao.rest-client"
+			]
+		}
+	}
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [5000, 5001, 5432],
